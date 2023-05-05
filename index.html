@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent My Apartment</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--font awesome-->
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Sevillana&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<div class="template">
+    <div class="container">
+      <div class="column_one">
+            <h2>Rental </h2>
+            <h2>from $99</h2>
+            <h5>per night</h5>
+            <form target="_blank">
+             <div class="check_in">
+                <i class="fa-solid fa-check"></i>
+                <label for="check-in">Check In</label>
+                <input type="date" name="checkin" id="check-in" required>
+             </div>
+             <div class="check_out"> 
+                <i class="fa-solid fa-handshake"></i>            
+                <label for="check_out">Check out</label>
+                <input type="date" name="checkout" id="check_out" required>
+             </div>
+             <div class="Adult"> 
+                <i class="fa-solid fa-person"></i>
+                <label for="adult">Adult</label>
+                <input  type="number"  name="adult" id="adult" min="0" max="5" required>
+             </div>
+             <div class="kids"> 
+               <i class="fa-solid fa-child-reaching"></i>               
+                <label for="kids">kids</label>
+                <input type="number" name="kids" id="kids" min="0" max="5" required>
+             </div>
+             <div class="button_one">
+               <button id="btn"><i class="fa-solid fa-magnifying-glass"></i>search availabilty</button>
+             </div>
+            </form>
+            <div class="links_Apartment">
+               <i class="fa-solid fa-house"></i>
+            <a href="#apartment" >Apartment</a>
+            </div>
+            <div class="links_subscribe">
+               <i class="fa-solid fa-house"></i>
+            <a href="#subscribe" >subscribe</a>
+            </div>
+            <div class="links_contact">
+               <i class="fa-solid fa-house"></i>
+            <a href="#contact" >contact</a>
+            </div>
+      </div>
+    </div>
+   <section>
+    <div class="container">
+        <div class="column_two" id="apartment">
+            <p> The Apartment</p>
+         <div class="images">
+            <img src="images/master room1.jpg"/>
+            <p >master room</p>
+            <img src="images/dinner room.jpg"/>
+            <img src="images/bathroom.jpg"/>
+            <img src="images/babyroom.jpg"/>
+            <img src="images/toodler room.jpg"/> 
+         </div>
+         <hr>
+         <div class="spaces">
+            <pre>The space</pre>
+            <div class="info">
+               <div class="info1" >
+             <p><i class="fa-solid fa-person"></i> Max People:10</p>
+             <p><i class="fa-solid fa-bath"></i> bathrooms:2</p>
+             <p><i class="fa-solid fa-bed"></i>bedrooms:3</p>
+               </div>
+             <div class="info2">
+             <p><i class="fa-solid fa-check"></i> check in: after 3:00 Pm</p>
+             <p><i class="fa-solid fa-handshake"></i>check out:12Pm </p>
+             </div>
+         </div>
+         </div>
+         <hr>
+         <div class="Amenities">
+            <pre>Amenities</pre>
+            <div class="info">
+               <div class="info1">
+             <p><i class="fa-solid fa-shower"></i> Shower</p>
+             <p><i class="fa-solid fa-wifi"></i> WiFi</p>
+             <p><i class="fa-solid fa-tv"></i>Tv</p>
+               </div>
+             <div class="info2">
+             <p><i class="fa-solid fa-kitchen-set"></i> kitchen</p>
+             <p><i class="fa-solid fa-temperature-three-quarters"></i>Heating </p>
+             <p><i class="fa-solid fa-wheelchair"></i> Accessible </p>
+             </div>
+         </div>
+         <hr>
+         <div class="Extra_info">
+            <pre>Extra_info</pre>
+            <div class="info">
+             <p>Our apartment is really clean and we like to keep it that way. everything in the appartment is new , you will be our first renter , We hope to get a comfortable weekend in our apartment ,  Enjoy your weekend</p>
+             <br>
+         
+            </div>
+         </div>
+         <hr>
+         <div class="rules_info" id="subscribe">
+            <pre>rules</pre>
+            <div class="info">
+               <ol >
+                  <li>please donot destroy any of the assets</li>
+                  <li>please keep the apartment clean</li>
+                  <li>If you want to rent this apartment don't exceed the available number of people</li>
+                  <li>We will take 10% deposit </li>
+               </ol>
+            <br>
+               Subscribe to receive updates on available dates and special offers.
+            <p><button>Subscribe</button></p>
+            </div>
+         </div>
+         <hr>
+         <div class="contact" id="contact">
+            <div class="contact_info">
+               <pre>contact</pre>
+               <p><i class="fa-solid fa-phone"></i>234-9876-675</p>
+               <p><i class="fa-solid fa-envelope"></i>Appartment@gmail.com</p>
+               <br>
+               <p >We Accept:<i class="fa-regular fa-credit-card"></i> <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i><i class="fa-sharp fa-solid fa-credit-card-front"></i> <i class="fa-brands fa-cc-jcb"></i></p>
+            </div>
+         </div>
+        </div>
+    </div>
+   </div>
+   <div class="check" style="display: none;">
+      <img src="images/done-button.jpg" alt="image not load">
+         <div class="text">
+         <pre style="margin-top: -35px; color: white;">    sucessfully your date 
+         is available
+         </pre>
+         </div>
+         <button id="ok" style="    font-size: 25px;transform: translateX(176px);width: 145px;border-radius: 20px;background: #7ed926e8;color: white;">Ok</button>
+   </div>
+</div>
+<script src="jquery-3.6.3.min.js"></script>
+<script src="apartment.js"></script>
+</body>
+</html>
